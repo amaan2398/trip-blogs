@@ -8,7 +8,7 @@ function AllTripsPage() {
     useEffect(() => {
         setIsLoading(true);
         fetch(
-            "https://react-trip-backend-default-rtdb.asia-southeast1.firebasedatabase.app/trips.json"
+            `${process.env.REACT_APP_BACKEND_API_URL}${process.env.REACT_APP_BACKEND_API_DATABASE}`
         )
             .then((response) => {
                 return response.json();

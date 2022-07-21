@@ -5,7 +5,7 @@ function AddNewTripPage() {
     const navigate = useNavigate();
     function onAddTripHandler(tripData) {
         fetch(
-            "https://react-trip-backend-default-rtdb.asia-southeast1.firebasedatabase.app/trips.json",
+            `${process.env.REACT_APP_BACKEND_API_URL}${process.env.REACT_APP_BACKEND_API_DATABASE}`,
             {
                 method: "POST",
                 body: JSON.stringify(tripData),
