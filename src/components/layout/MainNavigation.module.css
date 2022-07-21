@@ -3,6 +3,8 @@
     height: 5rem;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0; 
     justify-content: space-between;
     background-color: #77002e;
     padding: 0 10%;
@@ -44,4 +46,10 @@
     border-radius: 12px;
     padding: 0 1rem;
     margin-left: 0.5rem;
+}
+
+.section{
+    font-size: 1rem;
+    color: white;
+    font-style: italic;
 }
